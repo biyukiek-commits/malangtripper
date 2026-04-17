@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#e2e2e5",
+                    "on-secondary-container": "#505254",
+                    "surface-container-low": "#fffae1",
+                    "on-surface": "#3d3905",
+                    "tertiary-fixed": "#e3fd74",
+                    "on-tertiary-container": "#516000",
+                    "surface": "#fffbff",
+                    "tertiary-container": "#e3fd74",
+                    "secondary-fixed-dim": "#d4d4d7",
+                    "inverse-primary": "#ffd709",
+                    "primary-dim": "#695700",
+                    "primary": "#776300",
+                    "inverse-on-surface": "#a59f61",
+                    "error": "#be2d06",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#d5ee68",
+                    "surface-variant": "#f3eb91",
+                    "tertiary": "#5b6b00",
+                    "surface-container-high": "#f9f19b",
+                    "tertiary-dim": "#505f00",
+                    "outline": "#878248",
+                    "surface-container-highest": "#f3eb91",
+                    "secondary-dim": "#57585b",
+                    "surface-tint": "#776300",
+                    "on-tertiary-fixed": "#414d00",
+                    "on-primary-container": "#5b4b00",
+                    "surface-dim": "#eee686",
+                    "on-error-container": "#520c00",
+                    "surface-bright": "#fffbff",
+                    "on-secondary-fixed": "#3e3f42",
+                    "primary-fixed": "#ffd709",
+                    "on-error": "#ffffff",
+                    "primary-container": "#ffd709",
+                    "surface-container": "#fef6a5",
+                    "on-primary-fixed-variant": "#665500",
+                    "secondary-container": "#e2e2e5",
+                    "on-secondary-fixed-variant": "#5a5c5e",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#453900",
+                    "error-dim": "#b92902",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#636467",
+                    "inverse-surface": "#100f00",
+                    "outline-variant": "#c2bb7b",
+                    "error-container": "#f95630",
+                    "on-background": "#3d3905",
+                    "background": "#fffbff",
+                    "primary-fixed-dim": "#efc900",
+                    "on-surface-variant": "#6b662f",
+                    "on-tertiary-fixed-variant": "#5b6b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-accent {
+            transform: rotate(-3deg);
+            display: inline-block;
+        }
+        .glass-nav {
+            background: rgba(255, 251, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .shadow-ambient {
+            shadow-color: #3d3905;
+            box-shadow: 0 20px 40px -15px rgba(61, 57, 5, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(61,57,5,0.06)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<span class="text-2xl font-black text-yellow-700 dark:text-yellow-500 tracking-tighter font-['Plus_Jakarta_Sans']">MalangTripper</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']"href="malangtripper.html">Destinations</a>
+<a class="text-yellow-700 dark:text-yellow-400 border-b-2 border-yellow-500 pb-1 font-medium font-['Plus_Jakarta_Sans']" href="bromo.html">Bromo</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="citytour.html">City Tour</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="batu.html">Batu</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="#">Packages</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 rounded-full font-bold tracking-tight scale-95 active:scale-100 transition-transform">
+                Book a Trip
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] w-full overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Majestic Mount Bromo landscape at sunrise with misty caldera, glowing orange horizon, and volcanic silhouettes in dramatic cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBje01J3S_kNDwSRNvbZwgEPx-LyyYvGpkRh_gDWNlbbAfD_J0r7ZOaVNrq-yfk7754d2nfBkMSRVFfgR6Vw8Tx6OhsAZPDOc8vp--wNWOOlLz4foHwpOxdNYzdO775OH0VGJBMCFtrNME9_Mq74TO8O-a1aTFpJgRKU11KXFbkJe2QNIEVKbI36gz_8DCeyK5LKBlYQA1xdY49k-H7VqJ7_ttxGFk82JKz2Oyi0PQ8r2-03ImSEwpQhRXAP4wAMqMxBTRtABbA7Qw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 h-full flex flex-col justify-end pb-24 px-8 max-w-7xl mx-auto">
+<span class="editorial-accent font-headline text-primary-container text-xl font-bold mb-4">Hello Tripper</span>
+<h1 class="font-headline text-5xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] max-w-4xl">
+                    MAJESTIC<br/>BROMO SUNRISE
+                </h1>
+<div class="flex gap-4 mt-8">
+<div class="bg-white/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/30 text-white font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span> 4.9/5 Explorer Rating
+                    </div>
+<div class="bg-white/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/30 text-white font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined">schedule</span> 12 Hours Journey
+                    </div>
+</div>
+</div>
+</section>
+<!-- The Experience -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-7">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight mb-8">The Experience</h2>
+<p class="text-xl leading-relaxed text-on-surface-variant mb-6">
+                        Witness the celestial awakening of East Java's most iconic landscape. This isn't just a tour; it's a sensory pilgrimage through the Sea of Sand to the rim of an active volcano.
+                    </p>
+<p class="text-lg leading-relaxed text-on-surface-variant mb-12">
+                        Our journey begins under a blanket of stars. You'll board a private 4x4 Jeep, navigating the rugged terrain of the Bromo Tengger Semeru National Park. As the first light of dawn breaks over Penanjakan Point, the caldera reveals itself in a breathtaking display of golds, purples, and deep blues.
+                    </p>
+<!-- Bento Grid Highlights -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-between h-64 border border-outline-variant/15">
+<span class="material-symbols-outlined text-4xl text-primary">landscape</span>
+<div>
+<h3 class="font-headline text-xl font-bold mb-2">Iconic Views</h3>
+<p class="text-sm opacity-80">Uninterrupted panoramas of Semeru and Batok.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-between h-64 border border-outline-variant/15">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+<div>
+<h3 class="font-headline text-xl font-bold mb-2">4x4 Adventure</h3>
+<p class="text-sm opacity-80">Rugged Jeep traversal across the black sands.</p>
+</div>
+</div>
+</div>
+</div>
+<aside class="lg:col-span-5 sticky top-32">
+<div class="bg-surface-container p-10 rounded-xl shadow-ambient border border-outline-variant/15">
+<div class="flex justify-between items-start mb-8">
+<div>
+<p class="text-sm uppercase tracking-widest font-bold text-on-surface-variant">Price Starts From</p>
+<p class="text-4xl font-black text-primary">IDR 850k</p>
+<p class="text-sm">per adventurer</p>
+</div>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded text-xs font-bold">ALL INCLUSIVE</span>
+</div>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm font-medium">Daily Departures from Malang</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm font-medium">Private 4x4 Jeep Included</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm font-medium">Professional Local Guide</span>
+</div>
+</div>
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-5 rounded-full font-black text-lg hover:opacity-90 transition-all shadow-lg">
+                            Book This Adventure
+                        </button>
+<p class="text-center text-xs mt-4 text-on-surface-variant font-medium">Free cancellation up to 48h before trip</p>
+</div>
+</aside>
+</div>
+</section>
+<!-- Itinerary Section -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight mb-16 text-center">Your Adventure Timeline</h2>
+<div class="relative space-y-12">
+<!-- Dashed Path Decor -->
+<div class="absolute left-8 top-0 bottom-0 w-px border-l-2 border-dashed border-outline/40 hidden md:block"></div>
+<div class="flex flex-col md:flex-row gap-8 items-start relative">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white font-bold shrink-0 z-10 shadow-lg">01</div>
+<div class="bg-white p-8 rounded-lg shadow-sm flex-1">
+<p class="text-primary font-bold text-sm mb-2">00:30 AM</p>
+<h3 class="font-headline text-2xl font-bold mb-3">Midnight Pickup</h3>
+<p class="text-on-surface-variant">Our guide picks you up directly from your hotel in Malang. Enjoy a comfortable private drive toward Tumpang or Tosari village.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-start relative">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white font-bold shrink-0 z-10 shadow-lg">02</div>
+<div class="bg-white p-8 rounded-lg shadow-sm flex-1">
+<p class="text-primary font-bold text-sm mb-2">03:30 AM</p>
+<h3 class="font-headline text-2xl font-bold mb-3">Jeep Ascent</h3>
+<p class="text-on-surface-variant">Switch to a 4WD Jeep for the rugged climb. We'll head straight to King Kong Hill or Penanjakan to secure the best sunrise viewing spot.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-start relative">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white font-bold shrink-0 z-10 shadow-lg">03</div>
+<div class="bg-white p-8 rounded-lg shadow-sm flex-1">
+<p class="text-primary font-bold text-sm mb-2">05:15 AM</p>
+<h3 class="font-headline text-2xl font-bold mb-3">Golden Hour Sunrise</h3>
+<p class="text-on-surface-variant">Witness the sun rising over the Bromo caldera. A moment of pure silence and majesty as the mountains catch the first light.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-start relative">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white font-bold shrink-0 z-10 shadow-lg">04</div>
+<div class="bg-white p-8 rounded-lg shadow-sm flex-1">
+<p class="text-primary font-bold text-sm mb-2">08:00 AM</p>
+<h3 class="font-headline text-2xl font-bold mb-3">Crater Trekking</h3>
+<p class="text-on-surface-variant">Hike across the Sea of Sand and climb the 250 steps to the rim of Bromo's active crater. Experience the roar of the earth.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Inclusions/Exclusions -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="grid md:grid-cols-2 gap-12">
+<div class="bg-surface p-12 rounded-xl border border-outline-variant/30">
+<h3 class="font-headline text-3xl font-extrabold mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-4xl">inventory_2</span>
+                        What's Included
+                    </h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">add_task</span>
+<div>
+<p class="font-bold">Private Transport</p>
+<p class="text-sm text-on-surface-variant">Pick up and drop off from your Malang accommodation.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">add_task</span>
+<div>
+<p class="font-bold">Private Jeep 4x4</p>
+<p class="text-sm text-on-surface-variant">Robust vehicle for the entire caldera circuit.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">add_task</span>
+<div>
+<p class="font-bold">Expert Local Guide</p>
+<p class="text-sm text-on-surface-variant">English speaking guide with deep knowledge of the area.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="bg-surface-container-lowest p-12 rounded-xl border border-outline-variant/15 opacity-80">
+<h3 class="font-headline text-3xl font-extrabold mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-4xl">block</span>
+                        Exclusions
+                    </h3>
+<ul class="space-y-6">
+<li class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined">close</span>
+<span class="font-medium">Bromo National Park Entrance Fees</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined">close</span>
+<span class="font-medium">Personal Travel Insurance</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined">close</span>
+<span class="font-medium">Horse riding across the sand sea</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Photo Gallery -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="editorial-accent font-headline text-primary text-lg font-bold">Ngetrip Nagih</span>
+<h2 class="font-headline text-4xl font-extrabold tracking-tight">Adventure Gallery</h2>
+</div>
+<p class="text-on-surface-variant font-medium hidden md:block">Real captures from our recent explorations</p>
+</div>
+<!-- Asymmetric Bento Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden shadow-ambient group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Wide angle shot of Mount Bromo caldera with blue smoke rising against a vibrant morning sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClfees-we6iQaCfenfBFZbbR-bm7nK9V6scuYHaJKxr-DgyepHWmCxTDXlgdNZF7_N2RAvj7d0-d0VDVTSWlNL3HuWxFZXoiIMlbrv2K1wNZmlPx8zX8fN6Lvu5PBQGjIbZTwjwHlA5GKOUIaXE93t8OGDRi0HFM58cvFwIhrTk0_P904eU6q-QaAk0ZLrzc1uYVco5ntVn0VvgHe5ebFMD3sPBF8V-6T-2Vmz9qedptwWTDkTJ0qlOUwCJKmX4Phtj_g8gdFpPEw"/>
+</div>
+<div class="rounded-xl overflow-hidden shadow-ambient group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of a 4x4 Jeep driving through the sea of sand in Bromo national park with dust trails" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtTeO6_iVcLMZgtTVn2sypYUMR6ksiiBb-MXs9KuNAmyS__gUD6Gm3IfeHiyeI6AoZ9Bzqa1TszO1jfhaQzwZgIdBq8nfXv-Yz18euSSehElryPKXeZoiPOioivbByg27hgNSuVNvCKbZ0RrXTTWU5QRn3fkKLuISPQPObXATbAHHVQSygwl880Oer5ZPqES5TahaNnjwM9oFkmbdFdv1wpVdXYoC_KJ9yvfiBp4rKnXftzlH6EtuCtukJtZ0KMN4cwZNzsCCVRV8"/>
+</div>
+<div class="rounded-xl overflow-hidden shadow-ambient group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Hikers standing on the rim of Bromo crater looking down into the volcanic vent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD_3M1fLIx9667_j-E0uuplvNj4IRF0YkPdqKJDCJW1RoKUQeuG09tZ9ZSNzzgcbQC96Zd8fV-KAjg03usBNGvBk0wM-PMciCu_XTamtC-y2I2-iHF1LJXfwwRW3Wqb1aW4MDb49ntkZB8PxwqcMQdvw1xdQw7uPQ7Y_7nB9AzSjsLQQ-JU4l-yr6fflxZz4tXmcLCMgoYcnIZiRv5aiXvZGMEOI2MxIk1ips5QMYdmi8w725p4sSiFEZDLHEQQ72OefFH951Ec9E"/>
+</div>
+<div class="md:col-span-2 rounded-xl overflow-hidden shadow-ambient group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Lush green savannah landscapes surrounding the volcanic park area during the rainy season" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp8GldOAQuhWXC4pVqlENH64SHWQvME5uzCqf49FPPdmchUcTJeRgMCuwzCNnh30HykVwfPK4es7wg2nhmVWztdScnEdvP3PJBAdlAwRl1Ggx2RYsrUf4pmH732RU7Y52cY6i1oB-7JVPXhUM9WSNgjb9h_WvE9U2UlLaNS5H5kdjerNxHJicMEyB02u0ydwJOZjNPdt0E9pXCqlKwG-rJ-9cFhrea2rXIgcvlVDQh12aEIJ5SU4Ns3dRhX6GtBU5xQhUktM-oGO0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-24 px-8 max-w-7xl mx-auto text-center">
+<div class="bg-gradient-to-br from-primary to-primary-container p-16 md:p-24 rounded-xl relative overflow-hidden">
+<!-- Decorative Plane -->
+<div class="absolute -top-10 -right-10 opacity-20 transform -rotate-12">
+<span class="material-symbols-outlined text-[15rem] text-white">explore</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline text-4xl md:text-6xl font-black text-on-primary tracking-tighter mb-6">Ready for the adventure of a lifetime?</h2>
+<p class="text-on-primary/80 text-xl max-w-2xl mx-auto mb-10 font-medium">Spots for the sunrise tour fill up fast. Secure your private Jeep and guide today for a worry-free experience.</p>
+<button class="bg-white text-primary px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl">
+                        Book This Adventure
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-stone-50 dark:bg-stone-950 flex flex-col md:flex-row justify-between items-center px-8 py-12">
+<div class="mb-8 md:mb-0 text-center md:text-left">
+<p class="font-['Plus_Jakarta_Sans'] font-extrabold text-stone-800 dark:text-stone-200 text-2xl mb-2">East Java Echo</p>
+<p class="font-['Manrope'] text-sm text-stone-500 max-w-xs">© 2024 East Java Echo. Crafting Intentional Adventures in Malang.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 font-['Manrope'] text-sm transition-all" href="#">Terms of Service</a>
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 font-['Manrope'] text-sm transition-all" href="#">Privacy Policy</a>
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 font-['Manrope'] text-sm transition-all" href="#">Contact Support</a>
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 font-['Manrope'] text-sm transition-all" href="#">Partner With Us</a>
+</div>
+</footer>
+</body></html>

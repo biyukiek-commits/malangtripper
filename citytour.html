@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>East Java Echo - Malang Urban Discovery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#e2e2e5",
+                    "on-secondary-container": "#505254",
+                    "surface-container-low": "#fffae1",
+                    "on-surface": "#3d3905",
+                    "tertiary-fixed": "#e3fd74",
+                    "on-tertiary-container": "#516000",
+                    "surface": "#fffbff",
+                    "tertiary-container": "#e3fd74",
+                    "secondary-fixed-dim": "#d4d4d7",
+                    "inverse-primary": "#ffd709",
+                    "primary-dim": "#695700",
+                    "primary": "#776300",
+                    "inverse-on-surface": "#a59f61",
+                    "error": "#be2d06",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#d5ee68",
+                    "surface-variant": "#f3eb91",
+                    "tertiary": "#5b6b00",
+                    "surface-container-high": "#f9f19b",
+                    "tertiary-dim": "#505f00",
+                    "outline": "#878248",
+                    "surface-container-highest": "#f3eb91",
+                    "secondary-dim": "#57585b",
+                    "surface-tint": "#776300",
+                    "on-tertiary-fixed": "#414d00",
+                    "on-primary-container": "#5b4b00",
+                    "surface-dim": "#eee686",
+                    "on-error-container": "#520c00",
+                    "surface-bright": "#fffbff",
+                    "on-secondary-fixed": "#3e3f42",
+                    "primary-fixed": "#ffd709",
+                    "on-error": "#ffffff",
+                    "primary-container": "#ffd709",
+                    "surface-container": "#fef6a5",
+                    "on-primary-fixed-variant": "#665500",
+                    "secondary-container": "#e2e2e5",
+                    "on-secondary-fixed-variant": "#5a5c5e",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#453900",
+                    "error-dim": "#b92902",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#636467",
+                    "inverse-surface": "#100f00",
+                    "outline-variant": "#c2bb7b",
+                    "error-container": "#f95630",
+                    "on-background": "#3d3905",
+                    "background": "#fffbff",
+                    "primary-fixed-dim": "#efc900",
+                    "on-surface-variant": "#6b662f",
+                    "on-tertiary-fixed-variant": "#5b6b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #fffbff; color: #3d3905; }
+        h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .bg-primary-gradient { background: linear-gradient(135deg, #776300 0%, #ffd709 100%); }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(61,57,5,0.06)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<span class="text-2xl font-black text-yellow-700 dark:text-yellow-500 tracking-tighter font-['Plus_Jakarta_Sans']">MalangTripper</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="malangtripper.html">Destinations</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="bromo.html">Bromo</a>
+<a class="text-yellow-700 dark:text-yellow-400 border-b-2 border-yellow-500 pb-1 font-medium font-['Plus_Jakarta_Sans']" href="citytour.html">City Tour</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="batu.html">Batu</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="#">Packages</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 rounded-full font-bold tracking-tight scale-95 active:scale-100 transition-transform">
+                Book a Trip
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-6 py-12 max-w-7xl mx-auto overflow-hidden">
+<div class="flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-1/2 space-y-6">
+<span class="inline-block px-4 py-1.5 bg-tertiary-container text-on-tertiary-container rounded-full text-sm font-bold tracking-wide">MALANG CITY TOUR</span>
+<h1 class="text-5xl lg:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight">
+                        Urban Discovery: <br/><span class="text-primary italic">Heritage &amp; Vibes</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-xl">
+                        Uncover the hidden gems of Malang. From colonial Dutch architecture to the explosion of color in the local kampungs. A curated journey through the soul of East Java.
+                    </p>
+<div class="flex gap-4 items-center">
+<div class="flex -space-x-3">
+<img class="w-12 h-12 rounded-full border-2 border-surface" data-alt="portrait of a young male traveler smiling at the camera in front of a blurred city background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl0ONl9d1H8sfzCWN4AzbOYGyC4sPrM5lbuHgmInPkRS9t_NAJWMWcYRJK2S3PWVb3zFNkiDeBKwj6nPsFJm-4x2rVNBJWATZ_8-T6SJ0fk-CxaGviuqnPu2hwD8K0GC13eQZpSqM3nYabNc0Uyk0EOOZXF0o_hfK8BuGtwmzWnem_H5TbFKdX7IioE2SiuFirm0xhF_p3eOxHvxAGJ5JYd1-NAACpaNnZYT0mW8nLHIwceZTw9t6QjtYOSLawliANzlO0IjBIEok"/>
+<img class="w-12 h-12 rounded-full border-2 border-surface" data-alt="portrait of a young female traveler with sunglasses in a sunny outdoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8OIIRyTjRGHCzb4DYO63MXYQMTP59AfUWxuT95O43_5NVdL8YTfdvb5oAU_H_dOFz6_TAITvBAVSuDdzlfoaSWATk6OBK6UpE6eoEuyfXhQcj51EI9v6Mo6VuOpgACurviFm1rFxsPv2ROirtpMyCHAqAHLcfH8wOCdjKpQ4RC_G5xyEoVaKXV744by1JmVuTsW9m_qMP-JURZzYDyOG5Q9bVf9oE5tkZvywCHV263OIzrazpTjcO-sEqYLyqF6yLhZN70zwoX_c"/>
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-surface flex items-center justify-center text-xs font-bold text-on-surface">+12k</div>
+</div>
+<p class="text-sm font-medium text-on-surface-variant">Trusted by 12,000+ happy explorers in Malang.</p>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10 rotate-2">
+<img class="w-full h-full object-cover" data-alt="colorful houses of Kampung Warna-Warni in Malang with vibrant reds, yellows, and blues under a bright sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvmg0C9a0pRyZatPFl_fqUZsj3_58dCKlD-MQu7dof9jlRBECn9Le3iqc2JzTezgIvnV1SceGWn1_jj9SoGpTusgLLHEzAvi4avkLGHHdnkaHe0v3wcb4Pzmidp9GYlFCnM-Tn3KYSw2UVAPJ5oJDTVcD6ygs34NJB1PA6-x5cvwu9mD1SrmKjs3udYhOP6n49e1zmKSaL5UXZxJIG1h71r3bCVsSkWPJq9Xuk0zleEbZvXmDcjfn8Fk4KNMyjLNalaV8sH2nejsU"/>
+</div>
+<div class="absolute -top-10 -left-10 w-48 h-48 bg-primary-container/30 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-tertiary-container/20 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Urban Discovery Bento Grid -->
+<section class="py-20 bg-surface-container-low rounded-t-[3rem] px-6">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl font-extrabold tracking-tight mb-4">Urban Discovery</h2>
+<div class="w-20 h-2 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 bg-surface rounded-lg p-8 flex flex-col justify-between relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-3xl font-bold mb-4">Museum Angkut</h3>
+<p class="text-on-surface-variant max-w-md">Step into a world of vintage transportation and movie-set wonders. The largest transport museum in Southeast Asia.</p>
+</div>
+<div class="mt-12 relative h-64 md:h-80 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="vintage classic car in a stylized indoor museum setting with warm spotlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5_4Fbk34fcB-B_m-DpIYbo9mj0tKrnJB-OZSfTvtx4EMFDg5bwEUJpgWPoQhUtbOeIr-KAEfVORRvZRjNYxlSDNszMHYcMpmeGIoH1RqphESEekIxAM-ZUVq-_wovZhXMrVztINdxvxkqNdO9YGq7GW3E4wx41-ZiZzDIwDWPZaKHuxC4em3gwvP8E8qX0WHO5GSoQJM5OEh_cKS1RMccBQ3jvaIDwT4HxeueSLifom_D2UROstO323Q_GP7xA006D6OVeDQJqwY"/>
+</div>
+</div>
+<div class="md:col-span-4 space-y-6">
+<div class="bg-surface-container p-6 rounded-lg h-full border border-outline-variant/15">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="park">park</span>
+<h3 class="text-2xl font-bold mb-2">Jatim Park</h3>
+<p class="text-sm text-on-surface-variant">An educational playground blending science, nature, and Indonesian culture for all ages.</p>
+</div>
+<div class="bg-white rounded-lg p-6 h-full shadow-sm">
+<h3 class="text-2xl font-bold mb-2">Kampung Warna-Warni</h3>
+<p class="text-sm text-on-surface-variant">The "Rainbow Village" that transformed a riverside settlement into a global art installation.</p>
+<div class="mt-4 flex gap-2">
+<div class="w-8 h-8 rounded-full bg-red-400"></div>
+<div class="w-8 h-8 rounded-full bg-blue-400"></div>
+<div class="w-8 h-8 rounded-full bg-yellow-400"></div>
+<div class="w-8 h-8 rounded-full bg-green-400"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tour Highlights -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold tracking-tight mb-2">Tour Highlights</h2>
+<p class="text-on-surface-variant">Every stop is a story waiting to be told.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Highlight Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 shadow-xl relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="colonial dutch style building in Malang with white facade and large windows during daytime" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3TEbnIYvWiB1yQr9EKliti6feF0X2CWafXn68hJ1a7w3NQiAA_pDWcexmcMv2vih19DOdkxGc1rSdPCh1-T3zfdpaMa7JrXpqv4mCCRGaUCqjmJvZviQ_9_Az6DvPzFlFWBujNe8YUwt2hPeVuYE39VLUfJE8DSMM2QHKHVQI7MwtN96pIJMfQHkjQXMUZFpMwArOsd1zwWWQLj3APbUX5yXN4g-hjSNmxaH5GTz0ixgwvdbSbXM5zWNm55QQEmGfSaNZIQmz-Bk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<p class="text-white text-sm font-medium">Explore the colonial architecture of the Ijen Boulevard.</p>
+</div>
+</div>
+<h4 class="text-xl font-bold flex items-center justify-between">
+                        Colonial Heritage Walk
+                        <span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
+</h4>
+</div>
+<!-- Highlight Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 shadow-xl relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of local colorful street art and murals on an old brick wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACva3MGrTgU1zqCthMQfACkTBtRDd9PCJEflM5FDhfSksYru9bQxCTaiR_ZyvZzJnxlt1kMJkAdWT8sYoQoINtBxI9SJOb17EIo90uUWcC0nfjMgDUHl0bxOSJOmwxpMVODSGchKdFSgFPxv5u5vzdP-rUGq15ITsonTi76qAy6bOHxzUelFeoyAGJbhfGB6KgJn0QABaXs8NS5tOKsmY_cTNCZ5sZ6Hqh1apjtToYFdJT-YIMT73ztsd6GF5Mt4tKWdVb-OPE8yA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<p class="text-white text-sm font-medium">Capture vibrant street art and interact with local artists.</p>
+</div>
+</div>
+<h4 class="text-xl font-bold flex items-center justify-between">
+                        Art Alley Exploration
+                        <span class="material-symbols-outlined text-primary" data-icon="brush">brush</span>
+</h4>
+</div>
+<!-- Highlight Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 shadow-xl relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="interior of a cozy traditional indonesian cafe with wooden furniture and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXrvcNO5HCO4jtuv2-6FeTLoL53BfGPH1xS97aY5xmJcpnrMrG6T7CmBHaJhRyvpN0_yKCSYNml565Ljl6XsstWt-1DwrSuWHXHCLB2scmQFsEeEKQ9EeVfP3B7qkfxeiQHzy4uyphwGUJeM5N_o-hIxfqj-6v9SkvhnY1z5gVc9IOSt5GpNtcikWjA8UJNkVjWI2w-6IsAQdmRHovOSoMiXLLcPtr3DqkUISEtsb_w1-lcXHZ7ljcb2J-eEGJLfRZ4YH3Wj-39ck"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<p class="text-white text-sm font-medium">Relax in historic cafes that have served coffee for generations.</p>
+</div>
+</div>
+<h4 class="text-xl font-bold flex items-center justify-between">
+                        Traditional Tea Stop
+                        <span class="material-symbols-outlined text-primary" data-icon="coffee">coffee</span>
+</h4>
+</div>
+</div>
+</section>
+<!-- Culinary Stops -->
+<section class="py-24 bg-surface-container px-6">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2">
+<h2 class="text-4xl font-extrabold tracking-tight mb-6">Culinary Stops</h2>
+<p class="text-lg text-on-surface-variant mb-8 leading-relaxed">No trip to Malang is complete without tasting its legendary flavors. We’ve handpicked the most authentic spots for your journey.</p>
+<ul class="space-y-6">
+<li class="flex gap-4 items-start">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="restaurant">restaurant</span>
+</div>
+<div>
+<h5 class="font-bold text-lg">Bakso Malang President</h5>
+<p class="text-on-surface-variant text-sm">Eat by the train tracks at this world-famous meatball institution.</p>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="icecream">icecream</span>
+</div>
+<div>
+<h5 class="font-bold text-lg">Toko Oen</h5>
+<p class="text-on-surface-variant text-sm">A nostalgic 1930s colonial ice cream parlor and bakery.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="lg:w-1/2 grid grid-cols-2 gap-4">
+<img class="rounded-lg shadow-lg rotate-1" data-alt="bowl of steaming bakso malang with noodles, meatballs and tofu on a rustic wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjyfxzZhcU_d_lUp_w2OYZx0A348HEuunTBzopjNx16knBX6spUdGjISF1b_SYDh9OM-CtlA5YgnH2N-0nNArLcsKYMI4ljPxkAIK_8oP4jiRZvSYB2vykQRpR7U1DAbZ19JgY856kdsSwVHBc2vvpSBrbgDRWwqpgyJLmymZhfqmTfJweKg8q2Wp6eRVmic6t4Kf8_OdwzxEWtF2LPzyzXqBJMM3cLILf4ji5Qn4HOrxfq6-aSKjF2AuTk6t_wQ7zS9dj8_UM-UU"/>
+<img class="rounded-lg shadow-lg -rotate-2 mt-12" data-alt="classic scoop of vanilla ice cream in a vintage glass bowl with a wafer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtES5Wb86DexzHI0mJUkCUZQYZ6ccOJ_yci1tN2jq_aymoXYFuCCsqdSH2l0SiiZULD0FOzc85SYlCrhQhJfsvAPP5uImxPQHCUk2FJuWGbMGDfw6y2KiwLfRmuLy13-01DKjg-DAhwgqwIJ9htsBESAv4iO4HjKpbfhF1vAM3XT442-jTMr57cSgFMwHSaoL27-ivISf4hYYIPVNWd9udaUZtxY-YhDmX1a5os412c2j_ItznrRfD5AqcGxr9acY6RHePMICf1pw"/>
+</div>
+</div>
+</section>
+<!-- Booking Form Section -->
+<section class="py-24 px-6 max-w-5xl mx-auto">
+<div class="bg-surface-container-high rounded-xl p-8 md:p-16 shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-12 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="confirmation_number">confirmation_number</span>
+</div>
+<div class="relative z-10 text-center mb-12">
+<h2 class="text-4xl font-extrabold mb-4">Secure Your Adventure</h2>
+<p class="text-on-surface-variant">Simple booking, unforgettable memories.</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+<div class="space-y-2">
+<label class="text-sm font-bold ml-1">Full Name</label>
+<input class="w-full px-6 py-4 rounded-full bg-surface border-none focus:ring-2 focus:ring-primary shadow-inner" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold ml-1">Preferred Date</label>
+<input class="w-full px-6 py-4 rounded-full bg-surface border-none focus:ring-2 focus:ring-primary shadow-inner" type="date"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold ml-1">Number of People</label>
+<select class="w-full px-6 py-4 rounded-full bg-surface border-none focus:ring-2 focus:ring-primary shadow-inner">
+<option>1 - 2 Persons</option>
+<option>3 - 5 Persons</option>
+<option>6+ Persons (Group Discount)</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold ml-1">Contact Email</label>
+<input class="w-full px-6 py-4 rounded-full bg-surface border-none focus:ring-2 focus:ring-primary shadow-inner" placeholder="hello@adventure.com" type="email"/>
+</div>
+<div class="md:col-span-2 mt-4">
+<button class="w-full bg-primary-gradient text-on-primary font-black text-xl py-6 rounded-full shadow-2xl shadow-primary/30 transform hover:-translate-y-1 transition-all duration-300" type="submit">
+                            Confirm My Booking
+                        </button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-stone-50 dark:bg-stone-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-['Plus_Jakarta_Sans'] font-extrabold text-stone-800 dark:text-stone-200 text-2xl mb-2">East Java Echo</div>
+<p class="font-['Manrope'] text-sm text-stone-500 max-w-xs">© 2024 East Java Echo. Crafting Intentional Adventures in Malang.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 font-['Manrope'] text-sm" href="#">Terms of Service</a>
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 font-['Manrope'] text-sm" href="#">Privacy Policy</a>
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 font-['Manrope'] text-sm" href="#">Contact Support</a>
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 font-['Manrope'] text-sm" href="#">Partner With Us</a>
+</div>
+<div class="mt-8 md:mt-0 flex gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

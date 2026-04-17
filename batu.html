@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>East Java Echo - Explore Batu Highlands</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#e2e2e5",
+                    "on-secondary-container": "#505254",
+                    "surface-container-low": "#fffae1",
+                    "on-surface": "#3d3905",
+                    "tertiary-fixed": "#e3fd74",
+                    "on-tertiary-container": "#516000",
+                    "surface": "#fffbff",
+                    "tertiary-container": "#e3fd74",
+                    "secondary-fixed-dim": "#d4d4d7",
+                    "inverse-primary": "#ffd709",
+                    "primary-dim": "#695700",
+                    "primary": "#776300",
+                    "inverse-on-surface": "#a59f61",
+                    "error": "#be2d06",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#d5ee68",
+                    "surface-variant": "#f3eb91",
+                    "tertiary": "#5b6b00",
+                    "surface-container-high": "#f9f19b",
+                    "tertiary-dim": "#505f00",
+                    "outline": "#878248",
+                    "surface-container-highest": "#f3eb91",
+                    "secondary-dim": "#57585b",
+                    "surface-tint": "#776300",
+                    "on-tertiary-fixed": "#414d00",
+                    "on-primary-container": "#5b4b00",
+                    "surface-dim": "#eee686",
+                    "on-error-container": "#520c00",
+                    "surface-bright": "#fffbff",
+                    "on-secondary-fixed": "#3e3f42",
+                    "primary-fixed": "#ffd709",
+                    "on-error": "#ffffff",
+                    "primary-container": "#ffd709",
+                    "surface-container": "#fef6a5",
+                    "on-primary-fixed-variant": "#665500",
+                    "secondary-container": "#e2e2e5",
+                    "on-secondary-fixed-variant": "#5a5c5e",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#453900",
+                    "error-dim": "#b92902",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#636467",
+                    "inverse-surface": "#100f00",
+                    "outline-variant": "#c2bb7b",
+                    "error-container": "#f95630",
+                    "on-background": "#3d3905",
+                    "background": "#fffbff",
+                    "primary-fixed-dim": "#efc900",
+                    "on-surface-variant": "#6b662f",
+                    "on-tertiary-fixed-variant": "#5b6b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-accent {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-style: italic;
+        }
+        .bento-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-card:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(61,57,5,0.06)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<span class="text-2xl font-black text-yellow-700 dark:text-yellow-500 tracking-tighter font-['Plus_Jakarta_Sans']">MalangTripper</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="malangtripper.html">Destinations</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="bromo.html">Bromo</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="citytour.html">City Tour</a>
+<a class="text-yellow-700 dark:text-yellow-400 border-b-2 border-yellow-500 pb-1 font-medium font-['Plus_Jakarta_Sans']" href="batu.html">Batu</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-yellow-500 transition-colors duration-300 font-['Plus_Jakarta_Sans']" href="#">Packages</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 rounded-full font-bold tracking-tight scale-95 active:scale-100 transition-transform">
+                Book a Trip
+            </button>
+</div>
+</nav>
+<main class="pt-24 overflow-x-hidden">
+<!-- Hero: Mountain Escape Intro -->
+<section class="relative px-6 py-20 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 z-10">
+<span class="inline-block px-4 py-1.5 bg-tertiary-container text-on-tertiary-container rounded-full text-sm font-bold tracking-widest mb-6 -rotate-2">
+                        MALANG HIGHLANDS
+                    </span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold text-on-surface leading-[0.9] tracking-tighter mb-8">
+                        The Batu <br/><span class="text-primary italic">Mountain</span> Escape
+                    </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-lg mb-10">
+                        Breathe in the crisp alpine air of Batu. A curated journey through misty hillsides, vibrant orchards, and the heart of East Java's family playground.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-3 bg-surface-container px-6 py-4 rounded-xl">
+<span class="material-symbols-outlined text-primary" data-icon="thermostat">thermostat</span>
+<div>
+<p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Avg. Temp</p>
+<p class="text-lg font-bold">18°C — 24°C</p>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container px-6 py-4 rounded-xl">
+<span class="material-symbols-outlined text-primary" data-icon="cloud">cloud</span>
+<div>
+<p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Vibe</p>
+<p class="text-lg font-bold">Misty &amp; Fresh</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-2xl rotate-2">
+<img class="w-full h-full object-cover" data-alt="scenic aerial view of Batu city surrounded by lush green mountains and misty clouds in the morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnpNVvou17AwRNVKcJgW0tYTda7aX_C-JhMKvg15JxsQcKZ_H7_uw1j3JRqdkbmQn72z0s7NkrTOwou4j6G_nCeE7uoMRm89iDUHK4y9YY7qb5g2o1kAbcC6fJJLiLMWPjoIpYjiZBxnTZFGol8eT40aM7i6QPlmD6QYtYkqclj_nrjvHDd_v4AzAS4hps5ZXWFPPeY7xkqfOXY0E9WcAYOEK7-43xDWyNsobnTF8J6P5LN1aa7n2Bz-6KA2Y2LGH8Hb4jogqjVjw"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-64 aspect-square rounded-xl overflow-hidden border-8 border-surface shadow-xl -rotate-6 hidden md:block">
+<img class="w-full h-full object-cover" data-alt="close up of vibrant red apples growing in a lush green orchard in the Batu highlands" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXGmYWTUybPM5ihTZmME_SL3Md0rES6t-BJZ2AK9ulyyEQBq269BlJVFL2NRxLITN4vmhNpIsNeXyk3fENLI3zbvhMiih6mHUl5s3QcekZ-p7LC7J4EY2nOPKMjmrcfdxEIbNR01CVI3NRLMkyss6F79RQ7xfcFyhdObURa23KHUs5OvAahJljbOJTFeY2wujPZc2DlhM5zFKsGXn7bcpGbg0XF9gnPrULZaL-N4i2Un1EaghatmekDk-kmbPtGM2QwMY6zt1x9k8"/>
+</div>
+<div class="absolute -top-6 -right-6 text-primary opacity-20 transform rotate-12">
+<span class="material-symbols-outlined text-[120px]" data-icon="eco">eco</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Must-Visit Spots: Bento Grid -->
+<section class="py-24 px-6 bg-surface-container-low rounded-t-xl">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tighter mb-4">Must-Visit <span class="text-tertiary">Spots</span></h2>
+<p class="text-on-surface-variant font-medium">Curated destinations for every type of adventurer.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 min-h-[700px]">
+<!-- Apple Orchards -->
+<div class="md:col-span-2 md:row-span-1 bento-card bg-surface rounded-lg p-8 relative overflow-hidden flex flex-col justify-end group">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="family picking apples in a sunny Batu orchard with children smiling and holding baskets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf3terh_u36u0Rz9dkQFCIPYFngsPiAnir9JWhnwmnsPJo3XdgiImxM692umjUFU8lZf3e8fSpFp7scb98eLO0GLoQz-pKu7utrfaKbTZfP0iWeyP9VrikPCveC9LObgrrsfOe-Z0stuvU6-Tylx3iXYDuhPCUURdjgojE-TAuP6ejjvmtHu8Q3vRVnRHS6a_GuU2xseY7c5GqwDpPII6fcI4lWBZN5M5oa0qF7SkQP-kn4e2TShmtpmoTxRQzQ1UGeIB01cAb1sY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+</div>
+<div class="relative z-10 text-white">
+<h3 class="text-3xl font-headline font-extrabold mb-2">Apple Orchards</h3>
+<p class="text-stone-200 opacity-90">Pick your own fresh apples in the heart of Malang's fruit basket.</p>
+</div>
+</div>
+<!-- Eco Green Park -->
+<div class="md:col-span-1 md:row-span-2 bento-card bg-surface-container-high rounded-lg p-8 flex flex-col group">
+<div class="mb-6 rounded-lg overflow-hidden flex-1">
+<img class="w-full h-full object-cover" data-alt="beautiful exotic birds in a lush tropical garden setting at Eco Green Park Batu" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy8ASURjv-IxZ2Rk0ZG9mHNEoOQ4Zp8K6f44jMZju2twrsZlS9w5eiwIXCpTz8onNHt_tL-IP1FNhvg99F17Bd4yi-ic4gkm3sXmRfycoOcr98CgN-ubF4EAQXR9w94FB6KjGwibMUyyxTux6ukmPBl_lI7tU77Bm4DnPfBE3YWLDvyoJiJEOEmvxH6sf5N9HpvY5bWsYWrW4ijN59AtbULjAzY1ZB1D_VqEJaIyFNQKt1OlX7dPfh3mGkWPPKPd27-OBcYgnu-BQ"/>
+</div>
+<h3 class="text-2xl font-headline font-extrabold mb-3">Eco Green Park</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Interactive nature education meets exotic bird sanctuaries.</p>
+<span class="material-symbols-outlined text-4xl text-primary self-end" data-icon="nature_people">nature_people</span>
+</div>
+<!-- Museum Angkut -->
+<div class="md:col-span-1 md:row-span-1 bento-card bg-primary-container rounded-lg p-8 flex flex-col justify-between group">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-on-primary-container" data-icon="directions_car">directions_car</span>
+<span class="bg-white/40 px-3 py-1 rounded-full text-[10px] font-black tracking-widest uppercase">Iconic</span>
+</div>
+<div>
+<h3 class="text-2xl font-headline font-extrabold text-on-primary-container mb-2">Museum Angkut</h3>
+<p class="text-on-primary-container/80 text-sm">Southeast Asia's first transportation museum.</p>
+</div>
+</div>
+<!-- Night Spectacular -->
+<div class="md:col-span-2 md:row-span-1 bento-card bg-inverse-surface rounded-lg p-8 relative overflow-hidden flex items-center group">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="vibrant colorful lantern park at night with glowing displays and amusement park lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx7kBOnMmvcXYqDgcdrMCJWlqedZIoDptc_Pgs8-CkcoH79OJWYqFuI-uQugXMERJF5WLkZ2k4Jyj9qsxXjC2AnewwxjO8S_djlYUnS66n2AmGutQP7d-ZVnXcc7MHaTrdevGBWSnYOA2raPAk6POjqGebqpzD5PySpAr7cdrhf0IGY8nY6k8M81NSxFuK9Vlgsxlgdvh_2M6-K1U7spORcCr52bdP7fUeiEU7HSxqqgjao_5DCCWNZE-vgPE23uOW1beYzIQZzYo"/>
+</div>
+<div class="relative z-10 w-full grid grid-cols-2 gap-6 items-center">
+<div class="text-white">
+<h3 class="text-3xl font-headline font-extrabold mb-2">Batu Night Spectacular</h3>
+<p class="text-stone-300 text-sm">When the sun sets, the lanterns glow.</p>
+</div>
+<div class="text-right">
+<span class="material-symbols-outlined text-6xl text-primary-fixed" data-icon="stars" data-weight="fill">stars</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Weather & Best Time Info -->
+<section class="py-24 px-6 relative">
+<div class="max-w-5xl mx-auto bg-surface-container rounded-xl p-12 relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl font-headline font-extrabold tracking-tighter mb-6">Plan Your <br/><span class="text-primary">Perfect Visit</span></h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">The highlands are best experienced when the air is crisp and the sky is clear. Here is our guide to Batu's micro-climate.</p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-12 h-12 shrink-0 bg-primary/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="sunny">sunny</span>
+</div>
+<div>
+<h4 class="font-bold">Dry Season (Apr - Oct)</h4>
+<p class="text-sm text-on-surface-variant">The best time for orchard picking and outdoor theme parks. Clear views of Mount Arjuno.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 shrink-0 bg-primary/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="wb_twilight">wb_twilight</span>
+</div>
+<div>
+<h4 class="font-bold">Early Morning (5 AM - 8 AM)</h4>
+<p class="text-sm text-on-surface-variant">Batu is famous for its morning mist. Perfect for a highland coffee run.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="bg-surface p-6 rounded-lg shadow-xl -rotate-2 relative z-10">
+<div class="flex items-center justify-between mb-6">
+<p class="font-black tracking-widest text-xs uppercase">Batu Forecast</p>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-[10px] font-bold">OPTIMAL</span>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span class="text-sm font-medium">Monday</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="partly_cloudy_day">partly_cloudy_day</span>
+<span class="text-sm font-bold">22°C</span>
+</div>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span class="text-sm font-medium">Tuesday</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="sunny">sunny</span>
+<span class="text-sm font-bold">24°C</span>
+</div>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="text-sm font-medium">Wednesday</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="wb_cloudy">wb_cloudy</span>
+<span class="text-sm font-bold">19°C</span>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute inset-0 bg-primary/5 rounded-lg translate-x-4 translate-y-4 -z-10"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Batu Tour Packages -->
+<section class="py-24 px-6 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tighter mb-4">Highland <span class="text-primary">Packages</span></h2>
+<p class="text-on-surface-variant font-medium">Stress-free adventures designed for family comfort and maximum discovery.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 group" href="#">
+                        See All Packages 
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_right_alt">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-surface-container-low rounded-lg p-6 hover:bg-surface-container transition-colors duration-300">
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="a happy family with backpacks walking along a mountain trail in Batu with pine trees in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9VidbB2IILPspgJS_q2kJlXbhPJr5NRyVNEURE74EVDsq944uMENBgfqIi2-EKfQY-U-XyBnlgW94TuszAiFnB1nP5SC8kexlXRwu_OpHXsczLljfm287Zj2p6TNLZvh0Rih8wJn1oX4rq2Cftq5tbihL-rqams7F8PjhbU29XIjOGeyGhzhDRk6kuxbMMkYh4hYF7-nlKFBzujm43UKKAxlMtKNSxbTrDsgiWu60b74-2YvveJ1HrgPnglBT6IX48h4AKnfTCIg"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold">BEST SELLER</div>
+</div>
+<h4 class="text-2xl font-headline font-extrabold mb-2">The Family Joyride</h4>
+<p class="text-on-surface-variant text-sm mb-6">Apple picking, Museum Angkut, and luxury glamping experience.</p>
+<div class="flex justify-between items-center pt-6 border-t border-outline-variant/30">
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase">Starts from</p>
+<p class="text-xl font-black text-primary">IDR 1.250k<span class="text-sm font-medium text-on-surface-variant">/pax</span></p>
+</div>
+<button class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-surface-container-low rounded-lg p-6 hover:bg-surface-container transition-colors duration-300">
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="a serene waterfall in Batu hidden among lush tropical ferns and basalt rock formations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6OTC5Il3YHYxQ55VNR56Ad_XLtFtt8NTj1PkNGAtXsEG4ta-s3vM0kn21Hiccy59G5wLQMygQIa1TyxvwNksd3C_KSQAJZ5tL86FJI1lEP2hldTyiqLifIPBPCZophUBQ_CbOyV5h44DjxeZ878mWq7StQVFTyC4kY6QYnn-z0_Vf-UDlFvqykT5dzU8kUBCIYP2Jd_BFNiFEe0r2h65mxR0KWWfEhSz_na6bHoaIf9NjKvNLGfF7Iwy1ALCWDoy0xQrDRVyC9rc"/>
+</div>
+<h4 class="text-2xl font-headline font-extrabold mb-2">Highland Nature Trail</h4>
+<p class="text-on-surface-variant text-sm mb-6">Coban Rondo waterfall, Eco Green Park, and Omah Kayu views.</p>
+<div class="flex justify-between items-center pt-6 border-t border-outline-variant/30">
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase">Starts from</p>
+<p class="text-xl font-black text-primary">IDR 950k<span class="text-sm font-medium text-on-surface-variant">/pax</span></p>
+</div>
+<button class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-surface-container-low rounded-lg p-6 hover:bg-surface-container transition-colors duration-300">
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="traditional Javanese dancers performing in a village square with historic buildings in Batu" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIYlR0ED7eGa_DLf__xmgV3iR1cQm2jtgPou6fcdsL_WiDUGknFf4pHZckEZtDAqJRt8OBOfyXM5UtWReVH7qLlqx_aeQXFY6_Kpe5GQvSdGbMltKyxgMzfYKfatsk-y2zS25XKOOtnByoQeT4rRB1yyNb-cR7o6ucLORDf1MGgn-i28au9K8U19ONH0cIYG3L0WZK789e2kgS4QykszKpCOaK3jLaaDJS9PFVzUMeUEu1BHLv5BSHhMt9mfy-TAXD971nylqKLOE"/>
+</div>
+<h4 class="text-2xl font-headline font-extrabold mb-2">Heritage &amp; Chill</h4>
+<p class="text-on-surface-variant text-sm mb-6">Village culinary tour, temple visits, and sunset at Paralayang.</p>
+<div class="flex justify-between items-center pt-6 border-t border-outline-variant/30">
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase">Starts from</p>
+<p class="text-xl font-black text-primary">IDR 800k<span class="text-sm font-medium text-on-surface-variant">/pax</span></p>
+</div>
+<button class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hand-drawn style Callout -->
+<section class="py-12 px-6 flex justify-center">
+<div class="relative inline-block rotate-[-1deg] text-center">
+<p class="font-headline font-bold text-primary text-3xl md:text-4xl tracking-tight leading-none">
+                    "Ngetrip Nagih di Batu!"
+                </p>
+<div class="absolute -top-4 -left-6 opacity-30">
+<span class="material-symbols-outlined text-4xl" data-icon="star">star</span>
+</div>
+<div class="absolute -bottom-2 -right-8 opacity-30">
+<span class="material-symbols-outlined text-4xl" data-icon="mood">mood</span>
+</div>
+<div class="w-full h-1 bg-primary/20 mt-2 rounded-full"></div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-stone-50 dark:bg-stone-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-['Plus_Jakarta_Sans'] font-extrabold text-stone-800 dark:text-stone-200 text-2xl mb-4">
+                    East Java Echo
+                </div>
+<p class="font-['Manrope'] text-sm text-stone-500 max-w-xs">
+                    © 2024 East Java Echo. Crafting Intentional Adventures in Malang.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Manrope'] text-sm text-stone-500">
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 transition-all" href="#">Terms of Service</a>
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 transition-all" href="#">Privacy Policy</a>
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 transition-all" href="#">Contact Support</a>
+<a class="text-stone-400 hover:text-stone-600 hover:underline decoration-yellow-500 decoration-2 underline-offset-4 transition-all" href="#">Partner With Us</a>
+</div>
+</div>
+</footer>
+<!-- FAB (Suppressed for focused exploration content per rules, but included for top-level navigation if needed) -->
+<div class="fixed bottom-8 right-8 z-40 md:hidden">
+<button class="w-14 h-14 bg-primary rounded-full shadow-2xl flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</div>
+</body></html>
